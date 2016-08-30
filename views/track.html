@@ -21,7 +21,7 @@
     </style>
     
     <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=initMap">
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY8&callback=initMap">
     </script>
       
   </head>
@@ -33,7 +33,9 @@
         State : {{pos.state}} <br>
         Country  : {{pos.country}}  <br>
         Latitude : {{pos.Latitude}} <br>
-        Longitude: {{pos.longitude}}<br><br>
+        Longitude: {{pos.longitude}}<br>
+        Distance :
+        <span id="distance"></span>&nbspKM<br><br>
         <a href="/" class="button">BACK</a> 
         
     </div>
@@ -44,13 +46,15 @@
     <script type="text/javascript">
     var map;
     function initMap() {
+        // Load Map
         map = new google.maps.Map(document.getElementById('map'), {
             //center: {lat: 45.5, lng: -73.4},
             center: new google.maps.LatLng(45.5, -73.4),
             mapTypeId: google.maps.MapTypeId.ROADMAP,
-            zoom: 6
+            zoom: 7
         });
         
+        // Marker
         var lat = {{ pos.Latitude}};
         var lng = {{ pos.longitude}};
         var marker = new google.maps.Marker({
@@ -63,16 +67,19 @@
         // Calcul Distances
         var a = map.center;
         var b = marker.position;
-        var distance = calcDistance(a.lat(), a.lng(), b.lat(), b.lng())/1000;
-        window.alert(distance);
-        
         function calcDistance (fromLat, fromLng, toLat, toLng) {
               return google.maps.geometry.spherical.computeDistanceBetween(
                 new google.maps.LatLng(fromLat, fromLng), new google.maps.LatLng(toLat, toLng));
         }
-
+        
+        document.getElementById("distance").innerHTML = (calcDistance(a.lat(), a.lng(), b.lat(), b.lng())/1000).toFixed(2);
+        
+        function clickroute(m) {
+            map.panTo(m); //Make map global - use setCenter() to 
+        }
+        
+        clickroute(b);
     }
-
     </script>
   </body>
 </html>
