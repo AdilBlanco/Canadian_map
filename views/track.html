@@ -5,6 +5,19 @@
     <style type="text/css">
       html, body { height: 100%; margin: 0; padding: 0; }
       #map { height: 80%; }
+      
+      .button {
+          background-color: #DC143C;
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+      }
     </style>
     
     <script async defer
@@ -18,9 +31,10 @@
         <h2> Google Maps API </h2><br>
         City  : {{pos.city}}  <br>
         State : {{pos.state}} <br>
-        Country  : {{pos.country}} <br>
+        Country  : {{pos.country}}  <br>
         Latitude : {{pos.Latitude}} <br>
-        Longitude: {{pos.longitude}} 
+        Longitude: {{pos.longitude}}<br><br>
+        <a href="/" class="button">BACK</a> 
         
     </div>
     <br>
