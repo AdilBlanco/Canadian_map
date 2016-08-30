@@ -1,0 +1,32 @@
+[
+	 {"city": "Toronto",  "state": "ON", "country": "Canada", "Latitude": 43.653226,  "longitude": -79.3831843}
+	,{"city": "Montreal", "state": "QC", "country": "Canada", "Latitude": 45.5086699, "longitude": -73.55399249999999}
+	,{"city": "Vancouver","state": "BC", "country": "Canada", "Latitude": 49.261226,  "longitude":-123.1139268}
+	,{"city": "Ottawa",   "state": "ON", "country": "Canada", "Latitude": 45.4215296, "longitude":-75.69719309999999}
+	,{"city": "Edmonton", "state": "AB", "country": "Canada", "Latitude": 53.543564, "longitude":-113.490452}
+	,{"city": "Calgary",  "state": "AB", "country": "Canada", "Latitude": 51.04499999999999,"longitude":-114.0572222}
+	,{"city": "Quebec",   "state": "QC", "country": "Canada", "Latitude": 52.9399159, "longitude":-73.5491361}
+	,{"city": "Winnipeg", "state": "MB", "country": "Canada", "Latitude": 49.8997541, "longitude":-97.1374937}
+	,{"city": "Hamilton", "state": "ON", "country": "Canada", "Latitude": 43.243603,  "longitude":-79.889075}
+	,{"city": "London",   "state": "ON", "country": "Canada", "Latitude": 42.979398,  "longitude":-81.246138}
+	,{"city": "Kitchener","state": "ON", "country": "Canada", "Latitude": 43.434311,  "longitude":-80.4777469}
+	,{"city": "St Catharines", "state":"ON", "country": "Canada", "Latitude": 43.1593745,"longitude":-79.2468626}
+	,{"city": "Halifax",  "state": "NS", "country": "Canada", "Latitude": 44.648881,  "longitude":-63.575312}
+	,{"city": "Victoria", "state": "BC", "country": "Canada", "Latitude": 48.4286111, "longitude":-123.3655556}
+	,{"city": "Windsor",  "state": "ON", "country": "Canada", "Latitude": 42.292676,  "longitude":-82.99333500000002}
+	,{"city": "Oshawa",   "state": "ON", "country": "Canada", "Latitude": 43.89,      "longitude":-78.86}
+	,{"city": "Saskatoon","state": "SK", "country": "Canada", "Latitude": 52.1343699, "longitude":-106.647656}
+	,{"city": "Regina",   "state": "SK", "country": "Canada", "Latitude": 50.4547222, "longitude":-104.6066667}
+	,{"city": "St John's","state": "NL", "country": "Canada", "Latitude": 47.5605413, "longitude":-52.71283150000001}
+	,{"city": "Greater Sudbury", "state": "ON", "country": "Canada", "Latitude": 46.48999999999999,"longitude":-81.00999999999999}
+	,{"city": "Chicoutimi",      "state": "QC", "country": "Canada", "Latitude": 48.422159, "longitude":-71.061886}
+	,{"city": "Sherbrooke", "state": "QC", "country": "Canada", "Latitude": 45.4004791,    "longitude":-71.8837355}
+	,{"city": "Kingston",   "state": "ON", "country": "Canada", "Latitude": 44.2311717,    "longitude":-76.4859544}
+	,{"city": "Trois-Rivières", "state": "QC", "country": "Canada", "Latitude": 46.3432397,"longitude":-72.5432834}
+	,{"city": "Kelowna",    "state": "BC", "country": "Canada", "Latitude": 49.8879519,    "longitude":-119.4960106}
+	,{"city": "Abbotsford", "state": "BC", "country": "Canada", "Latitude": 49.0568,       "longitude":-122.285045}
+	,{"city": "St John",    "state": "NB", "country": "Canada", "Latitude": 45.2733153,    "longitude":-66.0633081}
+	,{"city": "Thunder Bay","state": "ON", "country": "Canada", "Latitude": 48.415802,     "longitude":-89.26729999999999}
+	,{"city": "Barrie",     "state": "ON", "country": "Canada", "Latitude": 44.3780902,    "longitude":-79.7016159}
+	,{"city": "Sydney",     "state": "NS", "country": "Canada", "Latitude": 46.1367899,    "longitude":-60.19422399999999}
+]	

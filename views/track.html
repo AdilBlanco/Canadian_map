@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      
+    <style type="text/css">
+      html, body { height: 100%; margin: 0; padding: 0; }
+      #map { height: 80%; }
+    </style>
+    
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=initMap">
+    </script>
+      
+  </head>
+  <body>
+      
+    <div id="select" style = "float:left; width:15%;">
+        <h2> Google Maps API </h2><br>
+        City  : {{pos.city}}  <br>
+        State : {{pos.state}} <br>
+        Country  : {{pos.country}} <br>
+        Latitude : {{pos.Latitude}} <br>
+        Longitude: {{pos.longitude}} 
+        
+    </div>
+    <br>
+    <div id="map" style = "float:right; width:85%;"></div>
+    <script type="text/javascript">
+
+    var map;
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 45.5, lng: -73.4},
+            zoom: 6
+        });
+        
+        var lat = {{ pos.Latitude}};
+        var lng = {{ pos.longitude}};
+        var marker = new google.maps.Marker({
+            position: {lat, lng},
+            map: map,
+            title: 'Vous etes ici'
+          });
+    }
+
+    </script>
+  </body>
+</html>

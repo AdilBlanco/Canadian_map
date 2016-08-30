@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      
+    <style type="text/css">
+      html, body { height: 100%; margin: 0; padding: 0; }
+      #map { height: 80%; }
+    </style>
+    
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9tcChRRoP1UC_-x24xsA3FttnuZLAoR8&callback=initMap">
+    </script>
+      
+  </head>
+  <body>
+      
+    <div id="select" style = "float:left; width:15%;">
+        <h2> Google Maps API </h2>
+        {% for doc in docs %}
+            <a href="/{{doc._id}}"> {{ doc.city }} </a><br>
+        {% endfor %}
+        
+    </div>
+    <br>
+    <div id="map" style = "float:right; width:85%;"></div>
+    <script type="text/javascript">
+
+    var map;
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 45.5, lng: -73.4},
+            zoom: 6
+        });
+    }
+
+    </script>
+  </body>
+</html>
